@@ -3,7 +3,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url(https://images.pexels.com/photos/7809122/pexels-photo-7809122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background: rgb(19, 13, 13);
 }
 
 .panel {
@@ -16,7 +16,7 @@ body {
 
 .question-container {
     margin: 10px;
-    padding: 5px;
+    padding: 2px;
     width: 80vw;
     height: 10vh;
     background-color: #c7dddf;

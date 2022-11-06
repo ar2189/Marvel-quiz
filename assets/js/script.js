@@ -9,6 +9,16 @@ const Questions = [
         { text: "Captain America", isCorrect: false },
         { text: "Spider Man", isCorrect: false }
     ]
+},
+
+{
+    id: 1,
+    q: "What country is T'Challa the king of?",
+    a: [{ text: "Latveria", isCorrect: false },
+        { text: "Madripoor", isCorrect: false },
+        { text: "Wakanda", isCorrect: true },
+        { text: "Sokovia", isCorrect: false }
+    ]
 }
 ]
 
@@ -92,3 +102,16 @@ confirm[0].addEventListener("click", () => {
 if (start) {
     iterate("0");
 }
+
+const next = document.getElementsByClassName('next')[0];
+
+var id = 0;
+
+next.addEventListener("click", () => {
+    start = false;
+    if (id < 2) {
+        id++;
+        iterate(id);
+        console.log(id);
+    }
+})

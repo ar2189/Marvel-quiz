@@ -3,7 +3,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background: rgb(19, 13, 13);
+    background: #0d1212;
 }
 
 .panel {
@@ -95,4 +95,9 @@ body {
     box-shadow: 0 0.4rem 0 rgb(8, 114, 244, 0.6);
     transition: transform 120ms;
     transform: scale(1.03);
+}
+
+p {
+    color: #c7dddf;
+    font-size: larger;
 }

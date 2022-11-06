@@ -51,5 +51,44 @@ op1.addEventListener("click", () => {
     selected = op1.value;
 })
 
+op2.addEventListener("click", () => {
+    op1.style.backgroundColor = "lightskyblue";
+    op2.style.backgroundColor = "lightgoldenrodyellow";
+    op3.style.backgroundColor = "lightskyblue";
+    op4.style.backgroundColor = "lightskyblue";
+    selected = op2.value;
+})
 
+op3.addEventListener("click", () => {
+    op1.style.backgroundColor = "lightskyblue";
+    op2.style.backgroundColor = "lightskyblue";
+    op3.style.backgroundColor = "lightgoldenrodyellow";
+    op4.style.backgroundColor = "lightskyblue";
+    selected = op3.value;
+})
+
+op4.addEventListener("click", () => {
+    op1.style.backgroundColor = "lightskyblue";
+    op2.style.backgroundColor = "lightskyblue";
+    op3.style.backgroundColor = "lightskyblue";
+    op4.style.backgroundColor = "lightgoldenrodyellow";
+    selected = op4.value;
+})
+
+const confirm = document.getElementsByClassName("confirm");
+
+confirm[0].addEventListener("click", () => {
+    if (selected == "true") {
+        result[0].innerHTML = "True";
+        result[0].style.color = "green";
+    } else {
+        result[0].innerHTML = "False";
+        result[0].style.color = "red";
+    }
+})
+
+}
+
+if (start) {
+    iterate("0");
 }
